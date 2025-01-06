@@ -41,4 +41,10 @@ public class Topico {
         this.curso = 1L;
 
     }
+
+    public void actualizarTopico(TopicoRequestDto topico){
+        this.titulo = topico.titulo();
+        this.mensaje = topico.mensaje();
+        this.autorId = topico.autorId();
+    }
 }
